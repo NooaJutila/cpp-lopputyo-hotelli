@@ -92,7 +92,7 @@ static Results HotelSystem(int RoomsTotal, vector<int> RoomsAvailable_main) {
 	int AmountRoomSize2 = 0;
 
 	//Begin menu
-	std::cout << "Hello. Currently, there are a total of " << RoomsAvailable_main[0] << " rooms available for reservation.\nOf these rooms, " << RoomsAvailable_main[1] << " can house one person, and " << RoomsAvailable_main[2] << " can house two." << endl;
+	std::cout << "Currently, there are a total of " << RoomsAvailable_main[0] << " rooms available for reservation.\nOf these rooms, " << RoomsAvailable_main[1] << " can house one person, and " << RoomsAvailable_main[2] << " can house two." << endl;
 	std::cout << "What name will these rooms be booked under? ";
 	std::getline(std::cin, Name);
 
@@ -201,10 +201,10 @@ int main() {
 
 		
 		//Searching the data for residents
-		bool restartlookup = true;
-		while (restartlookup == true) {
+		if (answer == 1) {
+			bool restartlookup = true;
+			while (restartlookup == true) {
 
-			if (answer == 1) {
 				std::cin.clear();
 				std::cin.ignore(numeric_limits<streamsize>::max(), '\n');
 				std::cout << "Would you like to search [1] by the name or [2] by the booking number?\n";
@@ -279,17 +279,15 @@ int main() {
 						}
 					}
 				}
+				std::cout << "Would you like to [1] Look up more residents or [2] Book a new resident? ";
+				cin >> answer;
+				answer = ErrorChecker(answer);
+				if (answer == 1)
+					continue;
+				if (answer == 2)
+					restartlookup = false;
 			}
-			std::cout << "Look up more residents? \n[1] Yes\n[2] No\n";
-			cin >> answer;
-			answer = ErrorChecker(answer);
-			if (answer == 1)
-				continue;
-			if (answer == 2)
-				restartlookup = false;
-			answer = 1;		//Sends the program over the next section, over to its end where the program normally ends after asking if they want to book more rooms, only if the while loop ends because user answered "2".
 		}
-
 		//This is where the main program begins
 		//Booking begins
 		if (answer == 2) {
