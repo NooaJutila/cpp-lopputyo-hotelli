@@ -26,6 +26,8 @@ Kaikki inputit tarkistettu
 
 Ohjelma kysyy käyttäjältä nimen, ihmisten määrän, öiden määrän ja minkä huonevaihtoehdon haluaa.
 
+Ohjelmassa on kaksi hakuvaihtoehtoa, nimellä haku tai asiakasnumerolla haku.
+
 -----
 
 Lisätoimintoja:
@@ -33,8 +35,6 @@ Lisätoimintoja:
 Ohjelma antaa vaihtoehtoja huoneiden varaamiselle.
 
 Ohjelma antaa myös mahdollisuuden palata taaksepäin lähes kaikissa vaiheissa.
-
-Ohjelmassa on kaksi hakuvaihtoehtoa, nimellä haku tai asiakasnumerolla haku.
 
 -----
 
