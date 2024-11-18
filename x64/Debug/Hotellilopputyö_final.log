@@ -1,0 +1,6 @@
+﻿  Hotellilopputyo.cpp
+C:\Users\nooaj\source\repos\Hotellilopputyö_final\Hotellilopputyö_final\Hotellilopputyo.cpp(67,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\nooaj\source\repos\Hotellilopputyö_final\Hotellilopputyö_final\Hotellilopputyo.cpp(67,23): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\nooaj\source\repos\Hotellilopputyö_final\Hotellilopputyö_final\Hotellilopputyo.cpp(393,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\nooaj\source\repos\Hotellilopputyö_final\Hotellilopputyö_final\Hotellilopputyo.cpp(595,1): warning C4715: 'Booking': not all control paths return a value
+  Hotellilopputyö_final.vcxproj -> C:\Users\nooaj\source\repos\Hotellilopputyö_final\x64\Debug\Hotellilopputyö_final.exe
