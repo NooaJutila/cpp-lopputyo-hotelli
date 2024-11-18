@@ -10,6 +10,8 @@ Tässä flowchart ohjelman toiminnasta:
 
 https://imgur.com/3Sho4uy
 
+Kuva löytyy myös tiedostona.
+
 -----
 
 Ohjelman perustoiminnot:
